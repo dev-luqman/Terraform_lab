@@ -2,8 +2,6 @@
 
 This course is sample work through of [terraform up and running](https://www.terraformupandrunning.com/)
 
-[![thumbnail](https://user-images.githubusercontent.com/1320389/154354937-98533608-2f42-44c1-8110-87f7e3f45085.jpeg)](https://www.youtube.com/watch?v=7xngnjfIlK4)
-
 ## Architecture
 
 We will be using the below architecture as sample project throughout the course
