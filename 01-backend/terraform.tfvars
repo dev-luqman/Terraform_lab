@@ -1,0 +1,5 @@
+bucket_prefix = "devops-web-app-data"
+domain        = "devOps.devlook.com"
+db_name       = "mydb"
+db_user       = "dev"
+# db_pass = "devbazfoo"
