@@ -29,6 +29,9 @@ AWS Terraform provider documentation: https://registry.terraform.io/providers/ha
 2. `terraform init`
 3. `terraform plan`
 4. `terraform apply`
+5. `terraform destroy`
+
+## Projects
 
 <!-- ### 01 - Evolution of Cloud + Infrastructure as Code
 
@@ -40,11 +43,11 @@ This module does not have any corresponding code.
 
 Terraform overview and setup instructions.
 
-Includes basic `hello world` terraform config to provision a single AWS EC2 instance.
+Includes basic `hello world` terraform config to provision a single AWS EC2 instance. -->
 
-### 03 - Basics
+### 01 - Backed
 
-Covers main usage pattern, setting up remote backends (where the terraform state is stored) using terraform Cloud and AWS, and provides a naive implementation of a web application architecture.
+Setting up remote backends (where the terraform state is stored) using terraform Cloud and AWS, and provides a naive implementation of a web application architecture.
 
 ### 04 - Variables and Outputs
 
@@ -68,4 +71,4 @@ Explains different types of testing (manual + automated) for Terraform modules a
 
 ### 09 - Developer Workflows + CI/CD
 
-Covers how teams can work together with Terraform and how to set up CI/CD pipelines to keep infrastructure environments up to date. -->
+Covers how teams can work together with Terraform and how to set up CI/CD pipelines to keep infrastructure environments up to date.
