@@ -1,10 +1,10 @@
 # General Variables
 
-variable "region" {
-  description = "Default region provider"
-  type        = string
-  default     = "us-east-1"
-}
+# variable "region" {
+#   description = "Default region provider"
+#   type        = string
+#   default     = "us-east-1"
+# }
 
 # EC2 Variables
 variable "ami" {
