@@ -19,11 +19,11 @@ resource "aws_s3_bucket" "bucket" {
 resource "aws_s3_bucket_versioning" "bucket_versioning" {
   bucket = aws_s3_bucket.bucket.id
   versioning_configuration {
-    status = "Enabled"
+    status = "error"
   }
 }
 
 resource "aws_instance" "instance_2" {
   ami           = "ami-007855ac798b5175e"
-  instance_type = "g2X.bacro"
+  instance_type = "g2X"
 }
