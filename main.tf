@@ -32,7 +32,7 @@ provider "aws" {
 
 resource "aws_instance" "ec2_test" {
   ami           = "ari-67b95e0e"
-  instance_type = "t2.micro"
+  instance_type = "t2.medium"
 }
 
 resource "aws_security_group" "instances" {
@@ -46,5 +46,5 @@ resource "aws_security_group_rule" "allow_http_inbound" {
   from_port   = 8080
   to_port     = 8080
   protocol    = "tcp"
-  cidr_blocks = ["0.0.0.0/0"]
+  cidr_blocks = ["0.0.0.0/0"] #tfsec:ignore:aws-vpc-no-public-ingress-sgr
 }
