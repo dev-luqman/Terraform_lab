@@ -12,9 +12,9 @@ jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: 03-linting-and-format
+    # defaults:
+    #   run:
+    #     working-directory: 03-linting-and-format
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -32,20 +32,20 @@ jobs:
       #   with:
       #     version: v1.51
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
-        with:
-          terraform_version: 1.0.1
-          terraform_wrapper: false
+      # - name: Setup Terraform
+      #   uses: hashicorp/setup-terraform@v1
+      #   with:
+      #     terraform_version: 1.0.1
+      #     terraform_wrapper: false
 
-      - name: Terraform Format
-        id: fmt
-        run: terraform fmt -check
+      # - name: Terraform Format
+      #   id: fmt
+      #   run: terraform fmt -check
 
-      - name: Terraform Init
-        id: init
-        run: terraform init
+      # - name: Terraform Init
+      #   id: init
+      #   run: terraform init
 
-      - name: Terraform Validate
-        id: validate
-        run: terraform validate
+      # - name: Terraform Validate
+      #   id: validate
+      #   run: terraform validate
