@@ -34,3 +34,17 @@ resource "aws_instance" "ec2_test" {
   ami           = "ari-67b95e0e"
   instance_type = "t2.micro"
 }
+
+resource "aws_security_group" "instances" {
+  name = "instance-security-group"
+}
+
+resource "aws_security_group_rule" "allow_http_inbound" {
+  type              = "ingress"
+  security_group_id = aws_security_group.instances.id
+
+  from_port   = 8080
+  to_port     = 8080
+  protocol    = "tcp"
+  cidr_blocks = ["0.0.0.0/0"]
+}

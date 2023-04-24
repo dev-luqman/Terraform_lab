@@ -100,3 +100,6 @@ jobs:
       # Run tflint command in each directory recursively # use --force if you want to continue with workflow although errors are there
       - name: Run TFLint
         run: tflint -f compact --recursive --minimum-failure-severity=error
+      # Tfsec - Security scanner for your Terraform code
+      - name: Run Tfsec
+        uses: aquasecurity/tfsec-action@v1.0.0
