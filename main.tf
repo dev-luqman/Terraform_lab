@@ -10,8 +10,8 @@ terraform {
   #   region         = "us-east-1"
   #   dynamodb_table = "terraform-state-locking"
   #   encrypt        = true
-  # }required_version = "~>1.2.3"
-  required_version = "~>1.2.3"
+  # }required_version = ">= 0.15, < 2.0.0"
+  required_version = ">= 0.15, < 2.0.0"
   required_providers {
     aws = {
       source  = "hashicorp/aws"

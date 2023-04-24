@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~>1.2.3"
+  required_version = ">= 0.15, < 2.0.0"
   #############################################################
   ## AFTER RUNNING TERRAFORM APPLY (WITH LOCAL BACKEND)
   ## YOU WILL UNCOMMENT THIS CODE THEN RERUN TERRAFORM INIT
