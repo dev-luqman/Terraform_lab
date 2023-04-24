@@ -24,7 +24,13 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-007855ac798b5175e" # Ubuntu 20.04 LTS // us-east-1 // Pleaase Change accordingly
-  instance_type = "tX.mEcro"
+# resource "aws_instance" "example" {
+#   ami           = "ami-007855ac798b5175e" # Ubuntu 20.04 LTS // us-east-1 // Pleaase Change accordingly
+#   instance_type = "tX.mEcro"
+# }
+
+
+resource "aws_instance" "ec2_test" {
+  ami           = "ari-67b95e0e"
+  instance_type = "t1.medium"
 }
