@@ -78,3 +78,11 @@ instance_ip_addr = "1.1.1.1"
 ```
 
 Will be output after `terraform apply` or `terraform output`
+
+### ⚠️ Warning !!!
+
+please ensure you delete all resources to prevent aws charges on your account
+
+```
+terraform destroy
+```

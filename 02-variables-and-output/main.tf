@@ -4,7 +4,7 @@ terraform {
   # See /code/01-backend/aws-backend.tf
   ############################################################
   backend "s3" {
-    bucket         = "devops-terraform-state" # REPLACE WITH YOUR BUCKET NAME
+    bucket         = "51596750-devops-terraform-state" # REPLACE WITH YOUR BUCKET NAME
     key            = "tf-bootstrap/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-state-locking"
@@ -21,7 +21,7 @@ terraform {
 
 
 provider "aws" {
-  region = var.region
+  region = "us-east-1"
 }
 
 ############################################################
