@@ -16,9 +16,14 @@ resource "aws_s3_bucket" "bucket" {
   force_destroy = true
 }
 
-resource "aws_s3_bucket_versionin" "bucket_versioning" {
+resource "aws_s3_bucket_versioning" "bucket_versioning" {
   bucket = aws_s3_bucket.bucket.id
   versioning_configuration {
     status = "Enabled"
   }
+}
+
+resource "aws_instance" "instance_2" {
+  ami           = "ami-007855ac798b5175e"
+  instance_type = "t2X.micro"
 }
