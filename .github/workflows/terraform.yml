@@ -67,6 +67,9 @@ jobs:
   tflint:
     name: runner / tflint
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 03-linting-and-format
 
     steps:
       - name: Clone repo
@@ -79,6 +82,10 @@ jobs:
       - name: Install Terraform
         run: |
           brew install terraform
+
+      - name: CHECK DIRECTORY
+        run: |
+          ls
 
       # Run init to get module code to be able to use `--module`
       - name: Terraform init

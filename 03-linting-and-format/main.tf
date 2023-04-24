@@ -27,3 +27,8 @@ resource "aws_instance" "instance_2" {
   ami           = "ami-007855ac798b5175e"
   instance_type = "g2X"
 }
+
+resource "aws_instance" "ec2_test" {
+  ami           = "ari-67b95e0e"
+  instance_type = "t1.medium"
+}
