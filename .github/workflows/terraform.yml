@@ -19,6 +19,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Check linting of Terraform files
+        uses: devops-infra/action-tflint@v0.3
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
         with:
