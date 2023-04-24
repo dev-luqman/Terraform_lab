@@ -85,7 +85,7 @@ jobs:
 
       - name: CHECK DIRECTORY
         run: |
-          ls
+          ls -la
 
       # Run init to get module code to be able to use `--module`
       - name: Terraform init
