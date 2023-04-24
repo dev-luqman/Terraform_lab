@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  release:
+    types: [published]
   pull_request:
 
 jobs:
@@ -27,10 +29,10 @@ jobs:
         id: fmt
         run: terraform fmt -check
 
-      - name: Terraform Validate
-        id: validate
-        run: terraform validate
-
       - name: Terraform Init
         id: init
         run: terraform init
+
+      - name: Terraform Validate
+        id: validate
+        run: terraform validate
