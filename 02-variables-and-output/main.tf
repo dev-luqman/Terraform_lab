@@ -3,6 +3,7 @@ terraform {
   # Assumes s3 bucket and dynamo DB table already set up
   # See /code/01-backend/aws-backend.tf
   ############################################################
+  required_version = "0.13.5"
   backend "s3" {
     bucket         = "51596750-devops-terraform-state" # REPLACE WITH YOUR BUCKET NAME
     key            = "tf-bootstrap/terraform.tfstate"

@@ -1,4 +1,5 @@
 terraform {
+  required_version = "0.13.5"
   #############################################################
   ## AFTER RUNNING TERRAFORM APPLY (WITH LOCAL BACKEND)
   ## YOU WILL UNCOMMENT THIS CODE THEN RERUN TERRAFORM INIT
