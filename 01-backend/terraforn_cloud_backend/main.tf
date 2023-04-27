@@ -1,9 +1,10 @@
 terraform {
+  required_version = ">= 0.15, < 2.0.0"
   backend "remote" {
-    organization = "devOps-sample"
+    organization = "devOps-sample" // insert your terraform cloud organization
 
     workspaces {
-      name = "backend-test"
+      name = "backend-test" // insert your terraform cloud organization
     }
   }
 
