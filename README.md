@@ -53,15 +53,19 @@ Setting up remote backends (where the terraform state is stored) using terraform
 
 Introduces the concepts of variables which enable Terraform configurations to be flexible and composable. Refactors web application to use these features.
 
-<!-- ### 05 - Language Features
+### 03 - Linting and format
+
+Ensuring linting, proper format and security check of an application before creating resources.
+
+### 04 - Language Features
 
 Describes additional features of the Hashicorp Configuration Language (HCL).
 
-### 06 - Organization and Modules -->
+### 05 - Organization and Modules
 
-<!-- Demonstrates how to structure terraform code into reuseable modules and how to instantiate/configure modules.
+Demonstrates how to structure terraform code into reuseable modules and how to instantiate/configure modules.
 
-### 07 - Managing Multiple Environments
+<!--### 07 - Managing Multiple Environments
 
 Shows two methods for managing multiple environments (e.g. dev/staging/prodution) with Terraform.
 
