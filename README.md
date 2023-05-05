@@ -65,6 +65,10 @@ Describes additional features of the Hashicorp Configuration Language (HCL).
 
 Demonstrates how to structure terraform code into reuseable modules and how to instantiate/configure modules.
 
+### 06 - Data and Nat Modification
+
+Using terraform data to modify an existing aws network created using console
+
 <!--### 07 - Managing Multiple Environments
 
 Shows two methods for managing multiple environments (e.g. dev/staging/prodution) with Terraform.
