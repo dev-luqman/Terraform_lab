@@ -69,11 +69,11 @@ Demonstrates how to structure terraform code into reuseable modules and how to i
 
 Using terraform data to modify an existing aws network created using console
 
-<!--### 07 - Managing Multiple Environments
+### 07 - Managing Multiple Environments
 
 Shows two methods for managing multiple environments (e.g. dev/staging/prodution) with Terraform.
 
-### 08 - Testing
+<!--### 08 - Testing
 
 Explains different types of testing (manual + automated) for Terraform modules and configurations.
 
